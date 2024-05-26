@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33627.172
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{42AF7DB6-E25D-4FCD-9D64-4BE9625958F2}"
+	ProjectSection(SolutionItems) = preProject
+		styles.css = styles.css
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{1DAF5B0D-B572-4AFC-9F96-E904F777EADD}"
+	ProjectSection(SolutionItems) = preProject
+		jquery.min.js = jquery.min.js
+		script.js = script.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{1BA97E6D-8864-48DA-B140-A1B75F7A73AD}"
+	ProjectSection(SolutionItems) = preProject
+		db.php = db.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A6175DF-E6BF-48F9-A9AE-B557ACFBFD7C}"
+	ProjectSection(SolutionItems) = preProject
+		about.php = about.php
+		contact.php = contact.php
+		index.php = index.php
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5B819D89-7B70-4D57-B896-D3F5E1F82C59}
+	EndGlobalSection
+EndGlobal
