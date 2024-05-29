@@ -1,8 +1,8 @@
 <?php
-$servername = "localhost";
-$username = ".";
-$password = "";
-$dbname = "my_project_db";
+$servername = "localhost";//"ProjectDB";
+$username = "public_User";
+$password = "ILuvCoding76";
+$dbname = "iteca";//"my_ITECA_Project";
 
 // Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);

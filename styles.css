@@ -5,3 +5,12 @@
 h1 {
     color: #007bff;
 }
+
+input[type="password"] {
+    font-family: inherit; 
+    visibility: visible; 
+}
+
+form {
+    background-color: silver;
+}

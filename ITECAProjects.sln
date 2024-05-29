@@ -5,11 +5,14 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{42AF7DB6-E25D-4FCD-9D64-4BE9625958F2}"
 	ProjectSection(SolutionItems) = preProject
+		bootstrap.min.css = bootstrap.min.css
+		loginPage.css = loginPage.css
 		styles.css = styles.css
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{1DAF5B0D-B572-4AFC-9F96-E904F777EADD}"
 	ProjectSection(SolutionItems) = preProject
+		bootstrap.min.js = bootstrap.min.js
 		jquery.min.js = jquery.min.js
 		script.js = script.js
 	EndProjectSection
@@ -24,6 +27,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		about.php = about.php
 		contact.php = contact.php
 		index.php = index.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "html", "html", "{ED74BB12-D646-4BB7-9532-41C1FC052D52}"
+	ProjectSection(SolutionItems) = preProject
+		loginPage.html = loginPage.html
 	EndProjectSection
 EndProject
 Global
