@@ -1,4 +1,16 @@
 <?php include 'db.php'; ?>
+
+<?php
+$page = $_GET['page'];
+if (isset($page)) {
+    $pagePHP = $page . '.php';
+    include $pagePHP;
+} else {
+    // Default content or homepage
+    echo '<h1>Welcome to the Homepage</h1>';
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,17 +18,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <!-- Bootstrap CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="css/styles.css" rel="stylesheet">
+    <link href="styles.css" rel="stylesheet">
 </head>
-<body>
-    <?php include 'loginPage.html'; ?>
-    <!-- jQuery -->
-    <script src="js/jquery.min.js"></script>
+<body>    
+    <script src="jquery.min.js"></script>
     <!-- Bootstrap JS -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="bootstrap.min.js"></script>
     <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>

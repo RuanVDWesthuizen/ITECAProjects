@@ -1,4 +1,28 @@
-﻿form.login{
+﻿form h1 {
+    margin-top: 0px;
+}
+
+form.login {
+    position: absolute;
+    left: 41%;
+
     width: 300px;
     height: 300px;
+    padding: 10px;
+}
+
+form input {
+    display: block;
+    width: -webkit-fill-available;
+}
+
+form label {
+    display: block;
+}
+    form label.resgister_text {
+        margin-top: 11px;
+    }
+
+div.space {
+    height: 25vh;
 }
