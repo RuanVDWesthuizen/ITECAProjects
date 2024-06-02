@@ -1,0 +1,8 @@
+﻿section[name=main-page] div.container text-center {
+    border: 1px solid black;
+}
+
+section[name=main-page] div.item {
+    border-left: 1px solid black;
+    cursor:pointer
+}

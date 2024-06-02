@@ -1,0 +1,30 @@
+﻿form h1 {
+    margin-top: 0px;
+}
+
+form.register {
+    position: absolute;
+    left: 41%;
+    width: 600px;
+    height: 600px;
+    padding: 10px;
+    background-color: silver;
+    border-radius: 15px;
+}
+
+    form.register input {
+        display: block;
+        width: -webkit-fill-available;
+    }
+
+    form.register label {
+        display: block;
+    }
+
+        form.register label.resgister_text {
+            margin-top: 11px;
+        }
+
+div.space {
+    height: 25vh;
+}

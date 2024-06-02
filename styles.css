@@ -14,3 +14,7 @@ input[type="password"] {
 form {
     background-color: silver;
 }
+
+span.mandatory {
+    color: red;
+}

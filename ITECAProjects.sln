@@ -5,14 +5,11 @@ VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "css", "css", "{42AF7DB6-E25D-4FCD-9D64-4BE9625958F2}"
 	ProjectSection(SolutionItems) = preProject
-		bootstrap.min.css = bootstrap.min.css
 		styles.css = styles.css
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{1DAF5B0D-B572-4AFC-9F96-E904F777EADD}"
 	ProjectSection(SolutionItems) = preProject
-		bootstrap.min.js = bootstrap.min.js
-		jquery.min.js = jquery.min.js
 		script.js = script.js
 	EndProjectSection
 EndProject
@@ -27,14 +24,42 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		about.php = about.php
 		contact.php = contact.php
 		index.php = index.php
-		loginPage.php = loginPage.php
+		login.php = login.php
+		main.php = main.php
+		register.php = register.php
 	EndProjectSection
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "LoginPage", "LoginPage", "{ED74BB12-D646-4BB7-9532-41C1FC052D52}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "login", "login", "{ED74BB12-D646-4BB7-9532-41C1FC052D52}"
 	ProjectSection(SolutionItems) = preProject
-		loginPage.css = loginPage.css
-		loginPage.html = loginPage.html
-		loginPage.js = loginPage.js
+		login.css = login.css
+		login.html = login.html
+		login.js = login.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "register", "register", "{7D0482B5-33AB-4C6A-98D3-6D7AFA7059B1}"
+	ProjectSection(SolutionItems) = preProject
+		register.css = register.css
+		register.html = register.html
+		register.js = register.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "main", "main", "{A5B63CA6-9043-4E79-99B7-E4B9D1DE0DC1}"
+	ProjectSection(SolutionItems) = preProject
+		main.css = main.css
+		main.html = main.html
+		main.js = main.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "basicComponents", "basicComponents", "{78FE863E-F774-45AE-B45D-9B70119FEA3A}"
+	ProjectSection(SolutionItems) = preProject
+		footer.php = footer.php
+		header.php = header.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Error", "Error", "{A2431319-B2C4-4CF3-9442-BA7CAD5E8F7F}"
+	ProjectSection(SolutionItems) = preProject
+		error.html = error.html
+		error.php = error.php
 	EndProjectSection
 EndProject
 Global
