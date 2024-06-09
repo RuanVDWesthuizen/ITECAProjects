@@ -26,6 +26,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		index.php = index.php
 		login.php = login.php
 		main.php = main.php
+		product.php = product.php
 		register.php = register.php
 	EndProjectSection
 EndProject
@@ -60,6 +61,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Error", "Error", "{A2431319
 	ProjectSection(SolutionItems) = preProject
 		error.html = error.html
 		error.php = error.php
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "product", "product", "{7C5AC3A8-6B3D-494F-AB0F-DCF243324C9E}"
+	ProjectSection(SolutionItems) = preProject
+		product.css = product.css
+		product.html = product.html
+		product.js = product.js
 	EndProjectSection
 EndProject
 Global
