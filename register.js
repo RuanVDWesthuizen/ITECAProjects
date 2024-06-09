@@ -1,4 +1,9 @@
 $(document).ready(function () {
+    $(document).on('click', 'button#login', function (event) {
+        event.preventDefault();
+        window.location.href = '../login';
+    });
+
     $(document).on('click', 'form.register button#sign_up', function (event) {
         event.preventDefault();
 

@@ -1,3 +1,4 @@
+    <!-- redirects to a page given the prompt -->
 <?php
     $page = $_GET['page'];
     if (isset($page)) {
@@ -22,8 +23,9 @@
     <link href="styles.css" rel="stylesheet">
 </head>
 <body>
+    <!-- When clicked on takes the user to main page. -->
     <nav>
-        <a href="login.php"> Proceed to login </a> 
+        <a href="main.php"> Proceed to Main page </a> 
     </nav>
     <title>Home</title>
 
