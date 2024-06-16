@@ -16,7 +16,6 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{1BA97E6D-8864-48DA-B140-A1B75F7A73AD}"
 	ProjectSection(SolutionItems) = preProject
 		addorder.php = addorder.php
-		db.php = db.php
 		getProductData.php = getProductData.php
 		getProducts.php = getProducts.php
 		getUser.php = getUser.php
@@ -25,6 +24,7 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A6175DF-E6BF-48F9-A9AE-B557ACFBFD7C}"
 	ProjectSection(SolutionItems) = preProject
 		.htaccess = .htaccess
+		404.php = 404.php
 		about.php = about.php
 		contact.php = contact.php
 		index.php = index.php

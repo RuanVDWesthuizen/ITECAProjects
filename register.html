@@ -12,49 +12,94 @@
     <title></title>
 </head>
 <body>
-    <div class="space">
-        <button type="submit" id="login"> Go to Login page </button>
-    </div>
-    <form class="register">
-        <h1> User Register </h1>
-        <div>
-            <label for="name">UserName: 
-            <span class="mandatory">*</span>
-            </label>
-            <input type="text" id="user_name" name="name"><br>
+    <div class="text-center">
+        <div class="row">
+            <div class="company-logo col-md-2">
+                <a class="navbar-brand" href="../main.php">
+                    <img src="Resources\images\stunningBrands.jpeg" alt="Logo" width="100%" height="38" class="d-inline-block align-top">
+                </a>
+            </div>
+            <div class="col-md-4 btn-group dropdown">
+                <button name="categories" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Categories
+                </button>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../404.php">CPU's</a></li>
+                    <li><a class="dropdown-item" href="../404.php">GPU's</a></li>
+                    <li><a class="dropdown-item" href="../404.php">Motherboards</a></li>
+                </ul>
+            </div>
 
-            <label for="first_name">FirstName:
-                <span class="mandatory">*</span>
-            </label>
-            <input type="text" id="first_name" name="name"><br>
-
-            <label for="last_name">Last name:
-                <span class="mandatory">*</span>
-            </label>
-            <input type="text" id="last_name" name="name"><br>
-
-            <label for="email_address">email address:
-                <span class="mandatory">*</span>
-            </label>
-            <input type="email" id="email_address" name="name"><br>
-
-            <label for="cell_num">Cellphone number:</label>
-            <input type="number" id="cell_num" name="name"><br>
-
-            <label for="password">Password:
-                <span class="mandatory">*</span>
-            </label>
-            <input type="password" id="password" name="name"><br>
-
-            <label for="confirm_password">Confirm Password:
-                <span class="mandatory">*</span>
-            </label>
-            <input type="password" id="confirm_password" name="name"><br>
-
-
-            <button type="submit" id="sign_up">Sign up.</button>
+            <div class="col-md-5 search-bar-and-button">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button id="search-all" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </div>
+            <div class="col-md-1 dropdown btn-group">
+                <button name="personal" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                    Menu
+                </button>
+                <ul class="dropdown-menu" id="side-menu">
+                    <li>
+                        <a class="dropdown-item" href="../404.php">Shopping Cart</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../register.php">Register</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../login.php">Login</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </form>
-    <div class="space"></div>
+        <div class="space">
+        </div>
+        <form class="register">
+            <h1> User Register </h1>
+            <div>
+                <label for="name">
+                    UserName:
+                    <span class="mandatory">*</span>
+                </label>
+                <input type="text" id="user_name" name="name"><br>
+
+                <label for="first_name">
+                    FirstName:
+                    <span class="mandatory">*</span>
+                </label>
+                <input type="text" id="first_name" name="name"><br>
+
+                <label for="last_name">
+                    Last name:
+                    <span class="mandatory">*</span>
+                </label>
+                <input type="text" id="last_name" name="name"><br>
+
+                <label for="email_address">
+                    email address:
+                    <span class="mandatory">*</span>
+                </label>
+                <input type="email" id="email_address" name="name"><br>
+
+                <label for="cell_num">Cellphone number:</label>
+                <input type="number" id="cell_num" name="name"><br>
+
+                <label for="password">
+                    Password:
+                    <span class="mandatory">*</span>
+                </label>
+                <input type="password" id="password" name="name"><br>
+
+                <label for="confirm_password">
+                    Confirm Password:
+                    <span class="mandatory">*</span>
+                </label>
+                <input type="password" id="confirm_password" name="name"><br>
+
+
+                <button type="submit" id="sign_up">Sign up.</button>
+            </div>
+        </form>
+        <div class="space"></div>
+    </div>
 </body>
 </html>

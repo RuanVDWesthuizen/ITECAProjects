@@ -4,6 +4,12 @@ $(document).ready(function () {
         window.location.href = '../main';
     });
 
+    $(document).on('click', 'form.login button#register', function (event) {
+        event.preventDefault();
+        console.log('Button Register clicked!');
+        window.location.href = '../register.php';
+    });
+
     $(document).on('click', 'form.login button#submit_user', function (event) {
         event.preventDefault();
         // check if exists, if yes, then go ahead
@@ -47,11 +53,4 @@ $(document).ready(function () {
         window.location.href = '../main';
     });
 
-});
-
-$(document).on('click', 'form.login button#register', function (event) {
-    event.preventDefault();
-    console.log('Button Register clicked!');
-    window.location.href = '../register';
-});
 });

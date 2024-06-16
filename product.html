@@ -5,46 +5,41 @@
 <section name="product-page">
     <div class="text-center">
         <div class="row">
-            <div class="col-md-6 menu-buttons btn-group dropdown">
-                <button name="categories" type="button" class="btn btn-secondary dropdown-toggle navbar-collapse" data-bs-toggle="collapse" data-bs-target="#categories" aria-controls="categories" aria-haspopup="true" aria-expanded="false">
+            <div class="company-logo col-md-2">
+                <a class="navbar-brand" href="../main.php">
+                    <img src="Resources\images\stunningBrands.jpeg" alt="Logo" width="100%" height="38" class="d-inline-block align-top">
+                </a>
+            </div>
+            <div class="col-md-4 btn-group dropdown">
+                <button name="categories" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Categories
                 </button>
-                <div class="categories">
-                    <ul class="collapse navbar-collapse" id="categories">
-                        <button>
-                            <a class="dropdown-item" href="#">CPU's</a>
-                        </button>
-                        <button>
-                            <a class="dropdown-item" href="#">GBU's</a>
-                        </button>
-                        <button>
-                            <a class="dropdown-item" href="#">Motherboards</a>
-                        </button>
-                    </ul>
-                </div>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="../404.php">CPU's</a></li>
+                    <li><a class="dropdown-item" href="../404.php">GPU's</a></li>
+                    <li><a class="dropdown-item" href="../404.php">Motherboards</a></li>
+                </ul>
             </div>
 
-            <div class="col-md-5 menu-buttons search-bar-and-button">
+            <div class="col-md-5 search-bar-and-button">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
                 <button id="search-all" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </div>
-            <div class="col-md-1 menu-buttons btn-group">
-                <button name="personal" type="button" class="btn btn-secondary dropdown-toggle navbar-collapse" data-bs-toggle="collapse" data-bs-target="#side-menu" aria-controls="side-menu" aria-haspopup="true" aria-expanded="false">
+            <div class="col-md-1 dropdown btn-group">
+                <button name="personal" type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
                     Menu
                 </button>
-                <div class="side-menu">
-                    <ul class="collapse navbar-collapse" id="side-menu">
-                        <li>
-                            <a class="dropdown-item" href="#">Shopping Cart</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Wish List</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Sign out</a>
-                        </li>
-                    </ul>
-                </div>
+                <ul class="dropdown-menu" id="side-menu">
+                    <li>
+                        <a class="dropdown-item" href="../404.php">Shopping Cart</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../register.php">Register</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="../login.php">Login</a>
+                    </li>
+                </ul>
             </div>
         </div>
         <div class="w-100"></div>
@@ -123,4 +118,5 @@
                 </script>
             </div>
         </form>
+    </div>
 </section>

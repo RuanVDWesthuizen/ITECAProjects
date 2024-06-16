@@ -26,7 +26,7 @@ div.categories {
     border: 1px black solid;
     text-align: left;
 }
-    div.categories ul.navbar-collapse.collapse.show {
+    div.categories ul.collapse.show {
         list-style-type: none;
         padding: 10px;
         margin: 0px;
