@@ -26,7 +26,7 @@
 
             <div class="col-md-5 menu-buttons search-bar-and-button">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                <button id="search-all" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </div>
             <div class="col-md-1 menu-buttons btn-group">
                 <button name="personal" type="button" class="btn btn-secondary dropdown-toggle navbar-collapse" data-bs-toggle="collapse" data-bs-target="#side-menu" aria-controls="side-menu" aria-haspopup="true" aria-expanded="false">
@@ -63,71 +63,28 @@
             <h1 class="Products-header">
                 Products
             </h1>
-            <div class="row">
-                <div class="product-item col-6 col-sm-3">
-                    <div class="product" data-id="1">
-                        <a class="navbar-product" href="#">
-                            <img src="Resources\images\cpu-1.png" alt="Logo" width="100%" height="350" class="d-inline-block align-top">
-                        </a>
-                    </div>
-                    <div>
-                        CPU 1
-                    </div>
-                </div>
-                <div class="product-item col-6 col-sm-3">
-                    <div class="product" data-id="2">
-                        <a class="navbar-product" href="#">
-                            <img src="Resources\images\cpu-2.png" alt="Logo" width="100%" height="350" class="d-inline-block align-top">
-                        </a>
-                    </div>
-                    <div>
-                        CPU 2
-                    </div>
-                </div>
-                <div class="product-item col-6 col-sm-3">
-                    <div class="product" data-id="3">
-                        <a class="navbar-product" href="#">
-                            <img src="Resources\images\gbu-1.png" alt="Logo" width="100%" height="350" class="d-inline-block align-top">
-                        </a>
-                    </div>
-                    <div>
-                        GBU 1
-                    </div>
-                </div>
-                <div class="product-item col-6 col-sm-3">
-                    <div class="product" data-id="4">
-                        <a class="navbar-product" href="#">
-                            <img src="Resources\images\gbu-2.png" alt="Logo" width="100%" height="350" class="d-inline-block align-top">
-                        </a>
-                    </div>
-                    <div>
-                        GBU 2
-                    </div>
-                </div>
+            <div id="products" class="row">
+                <script>
+                    fetch('getData.php')
+                        .then(response => response.json())
+                        .then(data => {
+                            const productContainer = document.getElementById('products');
+                            data.forEach(product => {
+                                const productDiv = document.createElement('div');
+                                productDiv.classList = 'product-item col-6 col-sm-3';
+                                productDiv.setAttribute(`data-id`,`${product.productID}`)
 
-                <!-- Force next columns to break to new line -->
-                <div class="w-100"></div>
-
-                <div class="product-item col-6 col-sm-3">
-                    <div class="product" data-id="5">
-                        <a class="navbar-product" href="#">
-                            <img src="Resources\images\mouse-1.png" alt="Logo" width="100%" height="350" class="d-inline-block align-top">
-                        </a>
-                    </div>
-                    <div>
-                        Mouse 1
-                    </div>
-                </div>
-                <div class="product-item col-6 col-sm-3">
-                    <div class="product" data-id="6">
-                        <a class="navbar-product" href="#">
-                            <img src="Resources\images\mouse-2.png" alt="Logo" width="100%" height="350" class="d-inline-block align-top">
-                        </a>
-                    </div>
-                    <div>
-                        Mouse 2
-                    </div>
-                </div>
+                                productDiv.innerHTML =
+                                    `<div class="product" data-id="${product.productID}">
+                                                                                        <a class="navbar-product" href="#">
+                                                                                                                <img src="Resources/images/${product.imageID}.png" alt="Logo" width="100%" height="350" class="d-inline-block align-top">
+                                                                                                             </a>
+                                                                                                             </div> <div>${product.name}</div>`;
+                                productContainer.appendChild(productDiv);
+                            });
+                        })
+                        .catch(error => console.error('Error fetching data:', error));
+                </script>
             </div>
         </section>
 </section>

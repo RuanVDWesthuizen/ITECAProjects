@@ -31,3 +31,11 @@ div.categories {
         padding: 10px;
         margin: 0px;
     }
+
+div.text-center {
+    margin: 0px 15px 0px 15px
+}
+
+div.search-bar-and-button {
+    display: inline-flex;
+}

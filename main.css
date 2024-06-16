@@ -1,12 +1,6 @@
 ﻿section[name=main-page] div.menu-buttons {
     padding: 0px 5px 0px 5px;
 }
-section[name=main-page] div.search-bar-and-button {
-    display: inline-flex;
-}
-section[name=main-page] div.text-center {
-    margin: 0px 15px 0px 15px
-}
 section[name=main-page] section[name=company-photo] {
     margin-bottom: 41px;
 }

@@ -1,4 +1,5 @@
-    <!-- redirects to a page given the prompt -->
+   <!-- Website name: http://ruan7676.project.iteca.stunning.brands.000webhostapp.com/ -->
+   <!-- redirects to a page given the prompt -->
 <?php
     $page = $_GET['page'];
     if (isset($page)) {

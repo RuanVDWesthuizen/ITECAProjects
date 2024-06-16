@@ -2,12 +2,17 @@
     padding: 10px;
     background-color: silver;
     border-radius: 15px;
-    /*margin: 0px 10px 0px 10px;*/
 }
 section[name=product-page] div.w-100 {
     height: 50px !important;
 }
 
-section[name=product-page]  {
-
+section[name=product-page] button#add-product {
+    border-radius: 6px;
+    border: aliceblue;
+    float: right;
+}
+section[name=product-page] div.description {
+    height: 22vh;
+    overflow: auto;
 }

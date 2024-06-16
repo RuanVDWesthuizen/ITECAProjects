@@ -1,3 +1,11 @@
+$(document).ready(function () {
+    $(document).on('click', 'button#search-all', function (event) {
+        event.preventDefault();
+        window.location.href = '../main';
+    });
+});
+
+
 function callProcedure() {
     var param1 = 'value1'; // Example parameter value
     // Adjust parameters as needed
