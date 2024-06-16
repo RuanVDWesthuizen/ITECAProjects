@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+<?php
+    // Access the session variable
+    $userID = isset($_SESSION['userID']) ? $_SESSION['userID'] : null;
+?>
 <html lang="en">
 <head>
     <meta charset="UTF-8">

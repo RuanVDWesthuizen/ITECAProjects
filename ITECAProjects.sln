@@ -15,8 +15,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "js", "js", "{1DAF5B0D-B572-
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "includes", "includes", "{1BA97E6D-8864-48DA-B140-A1B75F7A73AD}"
 	ProjectSection(SolutionItems) = preProject
+		addorder.php = addorder.php
 		db.php = db.php
-		getData.php = getData.php
+		getProductData.php = getProductData.php
+		getProducts.php = getProducts.php
+		getUser.php = getUser.php
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0A6175DF-E6BF-48F9-A9AE-B557ACFBFD7C}"
@@ -29,6 +32,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		main.php = main.php
 		product.php = product.php
 		register.php = register.php
+		setSession.php = setSession.php
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "login", "login", "{ED74BB12-D646-4BB7-9532-41C1FC052D52}"

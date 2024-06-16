@@ -5,7 +5,7 @@ $(document).ready(function () {
         var $product = $(this);
         var productID = $product.attr('data-id');
 
-        window.location.href = '../product';
+        window.location.href = `../product.php?id=${productID}`;
         
     });
 });

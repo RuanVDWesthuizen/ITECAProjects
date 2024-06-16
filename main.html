@@ -65,7 +65,7 @@
             </h1>
             <div id="products" class="row">
                 <script>
-                    fetch('getData.php')
+                    fetch('getProducts.php')
                         .then(response => response.json())
                         .then(data => {
                             const productContainer = document.getElementById('products');

@@ -9,6 +9,7 @@
         // Default content or homepage
         echo '<h1>Welcome to the Homepage</h1>';
     }
+$_SESSION['userID'] = null;
 ?>
 
 <!DOCTYPE html>

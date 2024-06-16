@@ -13,6 +13,9 @@ section[name=product-page] button#add-product {
     float: right;
 }
 section[name=product-page] div.description {
-    height: 22vh;
+    height: 20vh;
     overflow: auto;
 }
+    section[name=product-page] div.description .float-left {
+        float:left;
+    }

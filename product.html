@@ -48,25 +48,31 @@
             </div>
         </div>
         <div class="w-100"></div>
-        <form class="container product form-control">
-            <div class="row">
+        <form id="product-form" class="container product form-control">
+            <div id="product" class="row">
                 <div class="col product-item float-left">
                     <div class="product" data-id="5">
                         <a class="navbar-product" href="#">
-                            <img src="Resources\images\mouse-1.png" alt="Logo" width="100%" height="350" class="d-inline-block align-top">
+                            <img id="productimage" src="Resources\images\default.png" alt="Logo" width="100%" height="350" class="d-inline-block align-top">
                         </a>
                     </div>
                 </div>
                 <div class="col product-item">
-                    <h1>
-                        Mouse 1
+                    <h1 id="product-name">
+                        Default Item name
                     </h1>
-                    <h2> Category: Mouse</h2>
+                    <h2 id="category-name"> Category: Mouse</h2>
                     <div class="description float-left">
-                        <description>
+                        <description class="float-left" id="prod-desc">
                             Desription
                         </description>
                     </div>
+                    <div class="row col-md-12">
+                        <label class="col-md-5" for="fprice">Item price:</label>
+                        <h3 class=" col-md-7" id="prod-price" name="fprice">R1000</h3>
+                    </div>
+                    <!--<input type="number" disabled id="prod-price" name="fprice" value="1">-->
+
                     <div class="row col-md-12">
                         <div class=" col-md-9">
                             <label for="famount">Amount wanted:</label>
@@ -78,6 +84,43 @@
                     </div>
 
                 </div>
+                <script>
+                    /*const productId = new URLSearchParams(window.location.search).get('id');*/
+                    fetch(`getProductData.php?id=${new URLSearchParams(window.location.search).get('id')}`)
+                        .then(response => response.json())
+                        .then(data => {
+                            // Assuming data is an array of products
+                            var product = data[0];
+                            var productID = product.productID;
+                            var name = product.name;
+                            var description = product.description;
+                            var price = product.price;
+                            var categoryName = product.categoryName;
+                            var imageID = product.imageID;
+
+
+
+                            // manually insert product Name into the source
+                            document.getElementById('product-form').id = productID;
+
+                            // manually insert product Name into the source
+                            document.getElementById('product-name').textContent = name;
+
+                            // manually insert category into the source
+                            document.getElementById('category-name').textContent = `Category: ${categoryName}`;
+
+                            // manually insert description into the source
+                            document.getElementById('prod-desc').textContent = description;
+
+                            // manually insert product price into the source
+                            document.getElementById('prod-price').textContent = `R ${price}`;
+
+                            // manually insert Images into the source
+                            let newSrc = `Resources/images/${imageID}.png`;
+                            document.getElementById('productimage').src = newSrc;
+                        })
+                        .catch(error => console.error('Error fetching data:', error));
+                </script>
             </div>
         </form>
 </section>

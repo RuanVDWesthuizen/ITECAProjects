@@ -14,7 +14,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "select productID, name, imageID from iteca.product;";
+    $sql = "select productID, name, imageID from iteca.product;";
 $result = $conn->query($sql);
 
 $data = array();
