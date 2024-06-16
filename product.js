@@ -1,13 +1,14 @@
 $(document).ready(function () {
     $(document).on('click', 'button#add-product', function (event) {
         event.preventDefault();
-
+        // Get Product id and user id
         var productId = $('form.container.product').attr('id');
         var userID = "<?php echo $userID; ?>";
 
         if (userID == undefined || userID == null)
             window.location.href = '../login.php';
-        // Make POST request to insertOrder.php
+
+        // An object that would be sent to addorder.php to use there.
         var formData = new FormData();
         formData.append('productId', productId);
         formData.append('userid', userID);
